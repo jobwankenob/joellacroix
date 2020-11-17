@@ -2,9 +2,10 @@
 style.css
 ---------
 
-Par Joel Lacroix 14/11/20
+Par Joel Lacroix 17/11/20
 */
-body {
+  @media screen and (max-width: 1280px){
+  body{
     margin: 0;
     padding: 0;
     background: rgb(255, 255, 255);
@@ -13,12 +14,8 @@ body {
     background-attachment: fixed;
     background-color: #ffffff;
   }
-   
-  @media all and (max-width:480px){
-    
-  }
-
-.nav ul {
+  
+  .nav ul {
     list-style: none;
     background-color: rgb(0, 0, 0);
     text-align: center;
@@ -28,7 +25,7 @@ body {
     width: 100%;
   }
 
-.nav li {
+  .nav li {
     font-family: monospace;
     font-size: 1.2rem;
     font-weight: 600;
@@ -36,37 +33,38 @@ body {
     height: 40px;
     border-bottom: 1px solid #888;
   }
-.nav a:link, a:visited{
+
+  .nav a:link, a:visited{
     text-decoration: none;
     color: rgb(255, 255, 255);
     display: block;
     transition: .5s background-color;
   }
 
-.nav a:hover, a:active{
+  .nav a:hover, a:active{
     background-image: linear-gradient(to right, rgba(42, 250, 205, 0.9), rgb(35, 235, 175),  rgba(31, 245, 198, 0.9));
     color: #000000;
     font-weight: 600;
     transition: .3s color;
   }  
 
-.oblique{
-      color: rgb(212, 34, 108);
+  .oblique{
+    color: rgb(212, 34, 108);
   }
 
-#nom{
-      font-family: monospace;
-      font-weight: bold;
-      font-size: 1.4rem;
+  #nom{
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1.4rem;
   }
 
-#dev{
-      font-family: monospace;
-      font-size: 1rem;
-      color: slategrey;
+  #dev{
+    font-family: monospace;
+    font-size: 1rem;
+    color: slategrey;
   }
 
-.nav li {
+  .nav li {
     width: 150px;
     border-bottom: none;
     height: 50px;
@@ -74,25 +72,25 @@ body {
     font-size: 1.6rem;
   }
 
-.nav li {
+  .nav li {
     display: inline-block;
     margin-right: -2px;
   }
 
-#circle {
+  #circle {
     border-radius: 50%;
     width: 15%;
     height: 15%;
   }
 
-.text{
-      margin-left: 500px;
-      margin-right: 500px;
-      font-family: monospace;
-      font-size: 1.4rem;
+  .text{
+    margin-left: 500px;
+    margin-right: 500px;
+    font-family: monospace;
+    font-size: 1.4rem;
   }
 
-.headers{
+  .headers{
     margin-left: 500px;
     margin-right: 500px;
     font-family: monospace;
@@ -103,19 +101,19 @@ body {
     border-radius: 25px;
 }
 
-.text a:visited, a:link{
-    font-family: monospace;
-    font-weight: bold;
-    color: #000000;
-    text-decoration: none;
-    font-size: 1.1rem;
+  .text a:visited, a:link{
+  font-family: monospace;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.1rem;
 }
 
 .text a:hover{
-    font-family: monospace;
-    font-weight: bold;
-    color: rgb(212, 34, 108);
-    text-decoration: underline;
-    font-size: 1.1rem;
+  font-family: monospace;
+  font-weight: bold;
+  color: rgb(212, 34, 108);
+  text-decoration: underline;
+  font-size: 1.1rem;
 }
-
+  }
