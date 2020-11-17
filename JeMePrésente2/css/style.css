@@ -4,104 +4,118 @@ style.css
 
 Par Joel Lacroix 17/11/20
 */
-  @media screen and (max-width: 1280px){
-  body{
-    margin: 0;
-    padding: 0;
-    background: rgb(255, 255, 255);
-    background-image: url("../img/montagnesbg.jpeg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: #ffffff;
-  }
-  
-  .nav ul {
-    list-style: none;
-    background-color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    position: fixed;
-    width: 100%;
-  }
 
-  .nav li {
-    font-family: monospace;
-    font-size: 1.2rem;
-    font-weight: 600;
-    line-height: 40px;
-    height: 40px;
-    border-bottom: 1px solid #888;
-  }
-
-  .nav a:link, a:visited{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    display: block;
-    transition: .5s background-color;
-  }
-
-  .nav a:hover, a:active{
-    background-image: linear-gradient(to right, rgba(42, 250, 205, 0.9), rgb(35, 235, 175),  rgba(31, 245, 198, 0.9));
-    color: #000000;
-    font-weight: 600;
-    transition: .3s color;
-  }  
-
-  .oblique{
-    color: rgb(212, 34, 108);
-  }
-
-  #nom{
-    font-family: monospace;
-    font-weight: bold;
-    font-size: 1.4rem;
-  }
-
-  #dev{
-    font-family: monospace;
-    font-size: 1rem;
-    color: slategrey;
-  }
-
-  .nav li {
-    width: 150px;
-    border-bottom: none;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.6rem;
-  }
-
-  .nav li {
-    display: inline-block;
-    margin-right: -2px;
-  }
-
-  #circle {
-    border-radius: 50%;
-    width: 15%;
-    height: 15%;
-  }
-
-  .text{
-    margin-left: 500px;
-    margin-right: 500px;
-    font-family: monospace;
-    font-size: 1.4rem;
-  }
-
-  .headers{
-    margin-left: 500px;
-    margin-right: 500px;
-    font-family: monospace;
-    font-weight: bold;
-    font-size: 2.8rem;
-    text-align: center;
-    background-image: linear-gradient(to right, rgba(42, 250, 205, 0.9), rgb(35, 235, 175),  rgba(31, 245, 198, 0.9));
-    border-radius: 25px;
+ /* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+  #primary { width:67%; }
+  #secondary { width:30%; margin-left:3%;}  
 }
 
-  .text a:visited, a:link{
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+  #primary { width:100%; }
+  #secondary { width:100%; margin:0; border:none; }
+}
+
+img { max-width: 100%; height: auto; }
+
+body{
+  margin: 0;
+  padding: 0;
+  background: rgb(255, 255, 255);
+  background-image: url("../img/montagnesbg.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #ffffff;
+}
+  
+.nav ul {
+  list-style: none;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.nav li {
+  font-family: monospace;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+
+.nav a:link, a:visited{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: block;
+  transition: .5s background-color;
+}
+
+.nav a:hover, a:active{
+  background-image: linear-gradient(to right, rgba(42, 250, 205, 0.9), rgb(35, 235, 175),  rgba(31, 245, 198, 0.9));
+  color: #000000;
+  font-weight: 600;
+  transition: .3s color;
+}  
+
+.oblique{
+  color: rgb(212, 34, 108);
+}
+
+#nom{
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+#dev{
+  font-family: monospace;
+  font-size: 1rem;
+  color: slategrey;
+}
+
+.nav li {
+  width: 150px;
+  border-bottom: none;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.6rem;
+}
+
+.nav li {
+  display: inline-block;
+  margin-right: -2px;
+}
+
+#circle {
+  border-radius: 50%;
+  width: 15%;
+  height: 15%;
+}
+
+.text{
+  margin-left: 500px;
+  margin-right: 500px;
+  font-family: monospace;
+  font-size: 1.4rem;
+}
+
+.headers{
+  margin-left: 500px;
+  margin-right: 500px;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 2.8rem;
+  text-align: center;
+  background-image: linear-gradient(to right, rgba(42, 250, 205, 0.9), rgb(35, 235, 175),  rgba(31, 245, 198, 0.9));
+  border-radius: 25px;
+}
+
+.text a:visited, a:link{
   font-family: monospace;
   font-weight: bold;
   color: #000000;
@@ -116,4 +130,3 @@ Par Joel Lacroix 17/11/20
   text-decoration: underline;
   font-size: 1.1rem;
 }
-  }
