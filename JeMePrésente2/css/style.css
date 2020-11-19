@@ -31,7 +31,7 @@ body{
   
 .nav ul {
   list-style: none;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(26, 0, 71);
   text-align: center;
   padding: 0;
   margin: 0;
@@ -56,8 +56,8 @@ body{
 }
 
 .nav a:hover, a:active{
-  background-image: linear-gradient(to right, rgba(42, 250, 205, 0.9), rgb(35, 235, 175),  rgba(31, 245, 198, 0.9));
-  color: #000000;
+  color: linear-gradient(to right, rgba(42, 250, 205, 0.9), rgb(35, 235, 175),  rgba(31, 245, 198, 0.9));
+  color: rgb(212, 34, 108);
   font-weight: 600;
   transition: .3s color;
 }  
@@ -111,7 +111,8 @@ body{
   font-weight: bold;
   font-size: 2.8rem;
   text-align: center;
-  background-image: linear-gradient(to right, rgba(42, 250, 205, 0.9), rgb(35, 235, 175),  rgba(31, 245, 198, 0.9));
+  color: #ffffff;
+  background-color: rgba(26, 0, 71);
   border-radius: 25px;
 }
 
