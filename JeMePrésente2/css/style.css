@@ -4,34 +4,32 @@ style.css
 
 Par Joel Lacroix 17/11/20
 */
-
- /* Media Queries: Tablet Landscape */
-@media screen and (max-width: 1060px) {
-  #primary { width:67%; }
-  #secondary { width:30%; margin-left:3%;}  
+img {
+  max-width: 300px;
+  height: auto;
+  float: left;
+  box-shadow: #353535;
 }
 
-/* Media Queries: Tabled Portrait */
-@media screen and (max-width: 768px) {
-  #primary { width:100%; }
-  #secondary { width:100%; margin:0; border:none; }
+img:hover {
+  box-shadow: 0 0 15px #353535;
 }
 
-img { max-width: 100%; height: auto; }
-
-body{
-  margin: 0;
+body {
+  margin: auto;
   padding: 0;
+  width: 900px;
+  width: 100%;
   background: rgb(255, 255, 255);
   background-image: url("../img/montagnesbg.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #ffffff;
 }
-  
+
 .nav ul {
   list-style: none;
-  background-color: rgb(26, 0, 71);
+  background-color: rgb(0, 0, 0);
   text-align: center;
   padding: 0;
   margin: 0;
@@ -48,31 +46,32 @@ body{
   border-bottom: 1px solid #888;
 }
 
-.nav a:link, a:visited{
+.nav a:link,
+a:visited {
   text-decoration: none;
   color: rgb(255, 255, 255);
   display: block;
-  transition: .5s background-color;
+  transition: 0.5s background-color;
 }
 
-.nav a:hover, a:active{
-  color: linear-gradient(to right, rgba(42, 250, 205, 0.9), rgb(35, 235, 175),  rgba(31, 245, 198, 0.9));
-  color: rgb(212, 34, 108);
+.nav a:hover,
+a:active {
+  color: rgb(15, 143, 248);
   font-weight: 600;
-  transition: .3s color;
-}  
-
-.oblique{
-  color: rgb(212, 34, 108);
+  transition: 0.3s color;
 }
 
-#nom{
+.oblique {
+  color: rgb(15, 143, 248);
+}
+
+#nom {
   font-family: monospace;
   font-weight: bold;
   font-size: 1.4rem;
 }
 
-#dev{
+#dev {
   font-family: monospace;
   font-size: 1rem;
   color: slategrey;
@@ -91,43 +90,78 @@ body{
   margin-right: -2px;
 }
 
-#circle {
+.circle {
   border-radius: 50%;
   width: 15%;
   height: 15%;
+  float: none;
 }
 
-.text{
+.circle:hover {
+  box-shadow: 0 0 15px #353535;
+}
+
+.text {
   margin-left: 500px;
   margin-right: 500px;
+  text-align: justify;
   font-family: monospace;
-  font-size: 1.4rem;
+  position: justify;
+  font-size: 14px;
 }
 
-.headers{
+.headers1,
+.headers2 {
+  color: rgb(15, 143, 248);
+}
+
+.headers1 {
   margin-left: 500px;
   margin-right: 500px;
   font-family: monospace;
   font-weight: bold;
-  font-size: 2.8rem;
+  font-size: 36px;
   text-align: center;
-  color: #ffffff;
-  background-color: rgba(26, 0, 71);
+  background-color: rgb(0, 0, 0);
   border-radius: 25px;
 }
 
-.text a:visited, a:link{
+.headers2 {
+  margin-left: 500px;
+  margin-right: 500px;
   font-family: monospace;
   font-weight: bold;
-  color: #000000;
+  font-size: 24px;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  border-radius: 25px;
+}
+
+.headers3 {
+  margin-left: 500px;
+  margin-right: 500px;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+  border-radius: 25px;
+}
+
+.text a:visited,
+a:link {
+  font-family: monospace;
+  font-weight: bold;
+  color: rgb(8, 79, 160);
   text-decoration: none;
   font-size: 1.1rem;
 }
 
-.text a:hover{
+.text a:hover {
   font-family: monospace;
   font-weight: bold;
-  color: rgb(212, 34, 108);
+  color: rgb(15, 143, 248);
   text-decoration: underline;
   font-size: 1.1rem;
 }
