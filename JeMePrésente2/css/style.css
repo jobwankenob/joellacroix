@@ -4,6 +4,7 @@ style.css
 
 Par Joel Lacroix 17/11/20
 */
+
 img {
   max-width: 300px;
   height: auto;
@@ -12,7 +13,7 @@ img {
 }
 
 img:hover {
-  box-shadow: 0 0 15px #353535;
+  box-shadow: 2px 2px 15px #353535;
 }
 
 body {
@@ -21,10 +22,10 @@ body {
   width: 900px;
   width: 100%;
   background: rgb(255, 255, 255);
-  background-image: url("../img/montagnesbg.jpeg");
+  background-image: url("../media/montagnesbg.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: #ffffff;
+  background-color: #c91111;
 }
 
 .nav ul {
@@ -38,7 +39,8 @@ body {
 }
 
 .nav li {
-  font-family: monospace;
+  font-family: titi;
+  font-weight: bold;
   font-size: 1.2rem;
   font-weight: 600;
   line-height: 40px;
@@ -164,4 +166,9 @@ a:link {
   color: rgb(15, 143, 248);
   text-decoration: underline;
   font-size: 1.1rem;
+}
+
+@font-face {
+  font-family: titi;
+  src: url("../font/TitilliumWeb-Regular.ttf");
 }
